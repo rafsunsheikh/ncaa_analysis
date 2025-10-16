@@ -1,5 +1,5 @@
 ## **Section 1: Data Preprocessing**
-#### **Followed steps for 1_data_preprocessing/1_data_loading:**
+### **Followed steps for 1_data_preprocessing/1_data_loading:**
 1. Data loading using Pandas 
 2. Newspaper data parsing and extract of informations + Combine the data together
 3. Reorder the columns of the data
@@ -126,7 +126,7 @@ Sample data (first 3 rows):
 ```
 
 
-#### **Followed steps for 1_data_preprocessing/2_data_cleaning:**
+### **Followed steps for 1_data_preprocessing/2_data_cleaning:**
 1. Duplicate analysis 
 2. Identify Articles Edition Varients
 3. Identify publication patterns
@@ -292,7 +292,7 @@ Final dataset: 149942 articles
 20 02                                                                  It's a Must for Latrell to Play Well - Next Season: [ALL EDITIONS] Newsday, Combined editions; Long Island, N.Y.
 ```
 
-#### **Followed steps for 1_data_preprocessing/3_text_normalizer:**
+### **Followed steps for 1_data_preprocessing/3_text_normalizer:**
 1. Analyze current state of data to identify normalization needs
 2. Text Normalization
 
@@ -357,7 +357,7 @@ stop_words = {
 4. Develop normalization pipeline (Levels: 'basic', 'moderate', 'advanced') and normalize
 
 
-#### **Followed steps for 1_data_preprocessing/3.5_normalized_data_cleaner:**
+### **Followed steps for 1_data_preprocessing/3.5_normalized_data_cleaner:**
 1. Remove specific Indices:
 ```
 indices_to_delete = [144042,
@@ -429,7 +429,7 @@ words_to_remove_colleges = [
 ]
 ```
 
-#### **Followed steps for 1_data_preprocessing/4_tokenization_and_stemming:**
+### **Followed steps for 1_data_preprocessing/4_tokenization_and_stemming:**
 1. Initialize Tokenizer (RegexpTokenizer from nltk.tokenize)
 2. Remove common stopwords from nltk.corpus
 3. Calculate frequency distribution
@@ -444,7 +444,7 @@ words_to_remove_colleges = [
 ```
 
 
-#### **Followed steps for 1_data_preprocessing/bigram tokenizer dictionary and corpus:**
+### **Followed steps for 1_data_preprocessing/bigram tokenizer dictionary and corpus:**
 1. Identify potential word segment for bigrams
 ```
 selected_bigrams = [
@@ -791,7 +791,7 @@ selected_bigrams = [
 3. Create and store "Dictionary" and "Corpus" from the tokens in the data for LDA training and analysis
 
 ## **Section 2: Training**
-#### **Followed steps for 2_training_scripts/NCAA training Models (Applies for 10, 15, 20, 25, 30, 35, 40, 45 and 50 topics models) :**
+### **Followed steps for 2_training_scripts/NCAA training Models (Applies for 10, 15, 20, 25, 30, 35, 40, 45 and 50 topics models) :**
 1. Load the dictionary and corpus
 2. Start the LDA (Latent Dirichlet Allocation) Training
 ```
@@ -817,7 +817,7 @@ lda_model_15_topics = LDA(corpus=corpus, id2word=dictionary, num_topics=15, rand
 
 
 ## **Section 3: Topic Analysis**
-#### **Followed steps for 3_multiple_topics_loader_and_analyzer/NCAA LDA Analysis  <topic_numner> Topics Loading and Analysis (Applies for 10, 15, 20, 25, 30, 35, 40, 45 and 50 topics models) :**
+### **Followed steps for 3_multiple_topics_loader_and_analyzer/NCAA LDA Analysis  <topic_numner> Topics Loading and Analysis (Applies for 10, 15, 20, 25, 30, 35, 40, 45 and 50 topics models) :**
 1. Load the trained model
 2. Load the dictionary and corpus
 3. Load all documents
@@ -835,7 +835,7 @@ Document_No	Dominant_Topic	Topic_Perc_Contrib	Keywords	Text
 9. Save the dataframe as excel
 
 ## **Section 4: Data Postprocessing**
-#### **Followed steps for 4_data_postprocessing/Top 100 documents add +2 with the document number:**
+### **Followed steps for 4_data_postprocessing/Top 100 documents add +2 with the document number:**
 1. Load the document list excel file
 2. Add +2 with the index numbers for each document
 
