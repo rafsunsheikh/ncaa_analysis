@@ -1,0 +1,15 @@
+cff-version: 1.0.0
+message: "If you use the notebooks from this repo, please cite it as below."
+title: "NCAA Analysis"
+authors:
+  - family-names: Gibson
+      given-names: Alexandra
+      orcid: https://orcid.org/XXXX-XXXX-XXXX-XXXX
+  - family-names: Sheikh
+      given-names: MD Rafsun
+      orcid: https://orcid.org/0009-0003-8327-7418
+  
+version: 1.0.0
+date-released: 2025-10-13
+license: Apache-2.0
+doi:  # add after getting the DOI from Zenodo 
